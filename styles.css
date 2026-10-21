@@ -1,0 +1,31 @@
+html 
+{
+  scroll-behavior: smooth;
+}
+
+body 
+{
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+.card 
+{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover
+{
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.card img 
+{
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card img:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}

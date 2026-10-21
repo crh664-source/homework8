@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+ <header class="header-gradient text-center py-5">
+  <div class="container">
+    <h1 class="fw-bold">Connor Hansen Portfolio</h1>
+  <div id="greeting-container" class="mt-3 text-white fs-4 fw-semibold"></div>
+  </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#summary">Connor Hansen</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Information</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <main class="container my-5">
+
+    <section id="summary" class="card shadow-sm mb-4">
+    <div class="card-body">
+      <h2 class="card-title fw-bold">About Me</h2>
+
+    <p>
+        Hello! My name is Connor Hansen. I am a student who enjoys learning new things,
+        working on myself, and improving my skills in computer science as a whole.
+</p>
+
+    <p>
+        I am interested in videogames, learning more about people, and learning.
+        My goal is to continue learning and prepare myself for a successful career.
+</p>
+ 
+    <h2>Personal Information</h2>
+
+    <p><strong>Name:</strong> Connor Hansen</p>
+    <p><strong>Grade:</strong> Sophomore year</p>
+    <p><strong>School:</strong> Northern Arizona University</p>
+    <p><strong>Location:</strong> Arizona, USA</p>
+    <div class="mt-3">
+    <button id="download-btn" class="btn btn-primary">Download Resume</button>
+    <p class="mt-2 text-muted">Downloads: <span id="download-count">0</span></span></p>
+    </div>
+
+    </section>
+
+<section id="education" class="card shadow-sm mb-4">
+<div class="card-body">
+<h2 class="card-title fw-bold">Education</h2>
+
+    <table class="table table-striped table-hover" id="educationTable">
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Focus</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Northern Arizona University</td>
+          <td>Mathematics, Science, Computer Science</td>
+          <td>Expected Graduation: May 2029</td>
+          </tr>
+          </tbody>
+          </table>
+    <h2 class="card-title fw-bold mt-4">Work Experience</h2>
+    <table class="table table-striped table-hover" id="experienceTable">
+        <thead>
+            <tr>
+                <th>Job Title / Role</th>
+                <th>Company</th>
+                <th>Start/End Dates</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <p>
+        I am currently studying subjects including Mathematics,
+        Science, and Computer Science.
+</p>
+    </section>
+ 
+    <hr>
+ 
+<section id="skills" class="card shadow-sm mb-4">
+  <div class="card-body">
+    <h2 class="card-title fw-bold mb-3">My Skills</h2>
+    <form id="skillForm" class="row g-3 mb-3">
+        <div class="col-auto">
+            <input type="text" id="skillInput" class="form-control" placeholder="Add a new skill" required>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Add Skill</button>
+        </div>
+    </form>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge bg-primary fs-6">Communication</span>
+      <span class="badge bg-primary fs-6">Teamwork</span>
+      <span class="badge bg-primary fs-6">Problem Solving</span>
+      <span class="badge bg-primary fs-6">Organizing</span>
+      <span class="badge bg-primary fs-6">Basic Computer Skills</span>
+      <span class="badge bg-primary fs-6">Microsoft Word</span>
+      <span class="badge bg-primary fs-6">Microsoft PowerPoint</span>
+      <span class="badge bg-primary fs-6">HTML</span>
+      </div>
+      </div>
+      </section>
+ 
+    <section id="projects" class="card shadow-sm mb-4">
+    <div class="card-body">
+    <h2 class="card-title fw-bold mb-4">My Projects</h2>
+    
+    <div class="row g-4" id="projectsContainer">
+
+        <div class="col-md-12">
+      <div class="card border-primary h-100">
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Ongoing Project</span>
+          <h3 class="h5 card-title fw-bold">Portfolio JavaScript Enhancements</h3>
+          <p class="card-text">Adding dynamic interactivity, user greeting elements, event listeners, and date calculations to the portfolio.</p>
+          <p class="mb-1"><strong>Deadline:</strong> November 30, 2026</p>
+          <p id="countdown-text" class="fw-bold text-primary mb-0"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+    <div class="card h-100 border">
+    <div class="card-body">
+    <h3 class="h5 card-title fw-bold">Project 1: Simple Calculator</h3>
+
+    <div class="col-md-6">
+    <div class="card h-100 border">
+    <div class="card-body">
+    <h3 class="h5 card-title fw-bold">Project 1: Simple Calculator</h3>
+    <p class="card-text">
+        I created a simple calculator that could do addition, subtraction, multiplication, and division all in python.
+    </p>
+    <img src="1151%20(1).jpg" alt="Code" class="img-fluid rounded mb-2" style="max-width: 200px;">
+    <img src="1191%20(1).jpg" alt="Code output" class="img-fluid rounded mb-2" style="max-width: 200px;">
+    </div>
+    </div>
+    </div>
+<div class="col-md-6">
+        <div class="card h-100 border">
+          <div class="card-body">
+            <h3 class="h5 card-title fw-bold">Project 2: random number game</h3>
+            <p class="card-text">
+              I built a game in python that generates a random number and when you guess it'll tell you higher or lower until you get it right.
+            </p>
+            <img src="1233%20(1).jpg" alt="Code" class="img-fluid rounded mb-2" style="max-width: 200px;">
+            <img src="1248%20(1).jpg" alt="Code output" class="img-fluid rounded mb-2" style="max-width: 200px;">
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-6">
+    <div class="card h-100 border">
+    <div class="card-body">
+    <h3 class="h5 card-title fw-bold">Project 3: Group short film</h3>
+            <p class="card-text">
+              I worked with a group and we made a short film completley edited.
+            </p>
+            <img src="1474%20(1).jpg" alt="Group I worked with" class="img-fluid rounded mb-2" style="max-width: 200px;">
+            <img src="reserved_king.png" alt="Place we got" class="img-fluid rounded mb-2" style="max-width: 200px;">
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </section>
+ 
+     <article class="project-card">
+     <h3>Project 3: Group short film</h3>
+     <p>
+        I worked with a group and we made a short film completley edited.
+     </p>
+    <img src="1474%20(1).jpg" alt="Group I worked with" width="200">
+    <img src="reserved_king.jpg" alt="Place we got" width="200">
+     </article>
+
+     </div>
+     </section>
+ 
+    <section id="more" class="panel">
+    <h2>Achievements</h2>
+    <ol>
+      <li>Graduated highschool with over a 4.0 GPA</li>
+      <li>Competed in an Arizona film competition</li>
+      <li>Became a Community Assistant for NAU</li>
+    </ol>
+
+    <h2>My Interests</h2>
+    <ul>
+      <li>Technology</li>
+      <li>Editing</li>
+      <li>Filming</li>
+      <li>Music</li>
+      <li>Gaming</li>
+      <li>Spending time with my partner</li>
+    </ul>
+
+    <h2>My Goals</h2>
+    <p>
+        My short-term goal is to improve my knowledge on coding along with programming so I am more well versed on my field.
+    </p>
+    <p>
+        My long-term goal is to graduate from college, find a succeful job in order to live with a family that I want to build.
+    </p>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5" id="contact">
+  <div class="container">
+    <h2 class="h4 mb-3">Contact Information</h2>
+    <p class="mb-2">Email: crh664@nau.edu</p>
+    <div class="mb-3">
+      <a href="https://www.linkedin.com/in/connor-hansen-b28bba322/" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm me-2">LinkedIn</a>
+      <a href="https://github.com/crh664-source" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">GitHub</a>
+    </div>
+    <p class="small text-white-50 mb-0">&copy; 2026 Connor Hansen - Student Portfolio</p>
+   </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
